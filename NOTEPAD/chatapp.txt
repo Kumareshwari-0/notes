@@ -1,0 +1,61 @@
+HOW DOES CHAT APPLICATION
+ 
+
+ Peer to peer concept ❓
+
+Backend and frontend(create two folder)
+
+By using javascript(node)...node -v(to check node installation)
+
+npm init -y(Backend server)
+
+library-socket-socket.io(worldwide technology used for communication apps)
+=>supports all programming language.
+=> Server =>installation =>npm install socket.io => cmd prmpt => Enter => socket.io+version visible
+
+socket doesn't work lonely,it need package
+
+Initialization =>With express => copy source code => create new js file =>paste the code in js file 
+=>make modification(console.log('Server running')) => run =>node filename.extension(got error because express not install)
+express(lone package)
+=>google => Express js =>now run the file
+
+----End of backend support------
+
+FRONT END
+=> Create Html file
+=>create javascript file and link it with HTML =>defer(load at end)
+=>socket.io =>Client =>installation =>From cdn(content delivery network) =>copy =>paste at html
+=> initialization =>const socket=io(+Web server number)
+
+backend cmd => nodemon
+
+backend cmd => npm start
+server begins to work
+
+Error dispalys bu port(by pass)
+socket =>cors:{
+orgin:'*'
+}
+----communication Establishment-----
+
+textarea => button =>(onclick=function name());
+
+Events => Emit cheat sheet =>Serverside => copy whatever you need =>io.on ku keela=> paste
+=> pass argument (uid,socketid)
+
+js file => code: socket.on('uid',(msg)=>{ console.log("your id"+msg)
+}
+ socket.emit('ack','Received')
+
+function send(){
+
+let mess=document.getelementbyid(msg').value
+
+socket.emit('msg',mesage)}
+
+
+CLIENT SIDE
+socket.on('ack'(msg)=>
+console.log(msg)});
+
